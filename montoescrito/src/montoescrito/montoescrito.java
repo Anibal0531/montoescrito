@@ -20,7 +20,22 @@ class montoescrito {
 		
 		 numero = a.nextInt();
 		 
-		 
+		 public static String nletra(int numero) {
+			 
+			 String cadena= new String();
+			 
+			 //aca sacamos las unidades de millon
+			 if((montoescrito/1000000)>0) {
+				 if((montoescrito/1000000)==1) {
+					 cadena= "un millon"+nletra(montoescrito%1000000);
+				 }
+				 else {
+					 cadena=nletra(montoescrito/1000000)+"millones"+nletra(montoescrito%1000000);
+				 }
+			 }
+		  
+			 
+		 }
 		 
 	}
 }
