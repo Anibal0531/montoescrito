@@ -1,7 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-
+import java.util.Scanner;
 class MontoEscrito {
 
 	@Test
@@ -10,8 +10,9 @@ class MontoEscrito {
         System.out.println("ingrese una cifra de cuatro numeros:");
 		
 	     int numero;
+	     int a=0;
 		
-		Scanner a = new Scanner(System.in);
+		Scanner a = new Scanner(System.int);
 		
 		 numero = a.nextInt();
 		 
@@ -46,12 +47,10 @@ class MontoEscrito {
 				 {
 					 cadena= "cien"+nletra(numero%100);
 				 }
+				 else cadena= nletra(numero/100)+"ciento"+ nletra(numero%100);
+				 
 				 else
-				 {
-					 cadena= nletra(numero/100)+"ciento"+ nletra(numero%100);
-				 }
-				 else
-				 {
+				 {import java.util.Scanner;
 					 if((numero/100)==5)
 					 {
 						 cadena="quinientos"+nletra(numer%100);
