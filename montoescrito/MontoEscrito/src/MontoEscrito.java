@@ -1,13 +1,8 @@
-package montoescrito;
-
 import static org.junit.jupiter.api.Assertions.*;
-import java.util.Scanner;
-
-
 
 import org.junit.jupiter.api.Test;
 
-class montoescrito {
+class MontoEscrito {
 
 	@Test
 	void test() {
