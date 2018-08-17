@@ -9,23 +9,24 @@ import java.util.Scanner;
 class MontoEscrito {
 
 	
-     public int Unidad (int Unidad){
+     public int Miles (int Miles){
+    	 int numero;
     	 
-    	 return Unidad;	
+    	 return Miles;	
 	}
      
-     public int Decenas (int Decenas) {
+     public int centenas (int centenas) {
     	 
     	 return 0; 
      }
      
-     public int Centenas(int Centenas) {
-    	 return Centenas;
+     public int decenas(int decenas) {
+    	 return decenas;
      }
      
-     public int Miles(int Miles) {
+     public int unidad(int unidad) {
     	 
-    	 return Miles;
+    	 return unidad;
      }
 }   
 
