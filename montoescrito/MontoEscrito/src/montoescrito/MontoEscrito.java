@@ -8,9 +8,9 @@ import java.lang.String;
 import montoescrito.Mil;
 
 class MontoEscrito {
-	private static final int Decenas = 0;
 	int texto;
 	int numero;
+
 	public String Miles(int Miless) {
 		Mil MilesTx = new Mil();
 		String texto = "";
@@ -21,28 +21,26 @@ class MontoEscrito {
 		return texto;
 	}
 
-	public int centena(int centenass) {
-		centenas CentenaTx = new centena();
-        String texto=""; 
-    	int centenas=numero%10;
-    	if ((centenass!=1) && (centenass!=5) && (centenass!=9) && (centenass!=0)) {
-			texto= CentenaTx.centenaEnTexto(centenass);
-    	}
-    	else
-    	{
-    		if(centenass==1) {
-    			texto= CentenaTx.centenaEnTexto(centenass);
-    		}
-    		if((centenass==5)) {
-    			texto= CentenaTx.centenaEnTexto(centenass);
-    		}
-    		if(centenass==9) {
-    			texto= CentenaTx.centenaEnTexto(centenass);
-    		}
-    	}
-    	     
-    	 return centenas; 
-     }
+	public int centenas(int centenass) {
+		Mil CentenaTx = new Mil();
+		String texto = "";
+		int centenas = numero % 10;
+		if ((centenass != 1) && (centenass != 5) && (centenass != 9) && (centenass != 0)) {
+			texto = CentenaTx.centenaEnTexto(centenass);
+		} else {
+			if (centenass == 1) {
+				texto = CentenaTx.centenaEnTexto(centenass);
+			}
+			if ((centenass == 5)) {
+				texto = CentenaTx.centenaEnTexto(centenass);
+			}
+			if (centenass == 9) {
+				texto = CentenaTx.centenaEnTexto(centenass);
+			}
+		}
+
+		return centenas;
+	}
 
 	public int Decenas(int Decenas) {
 		int decenas1 = numero % 10;
