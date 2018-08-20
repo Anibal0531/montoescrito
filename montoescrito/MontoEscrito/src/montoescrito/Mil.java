@@ -10,7 +10,7 @@ public class Mil {
 		case 1:
 			return "mil";
 		case 2:
-			return "dos mil";
+			return "dos mil ";
 		case 3:
 			return "tres mil";
 		case 4:
@@ -24,7 +24,7 @@ public class Mil {
 		case 8:
 			return "ocho mil";
 		case 9:
-			return "nueve mil";
+			return "nueve mil ";
 		default:
 			return "";
 		}

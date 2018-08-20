@@ -20,7 +20,6 @@ INDEX VERSION 1.131+C:\Users\anibal\Desktop\montoescrito\montoescrito\.metadata\
 984225034.index
 1172449904.index
 4289135590.index
-3480713290.index
 1084624933.index
 2938610636.index
 1988513050.index

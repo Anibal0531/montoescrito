@@ -8,6 +8,7 @@ import java.lang.String;
 import montoescrito.Mil;
 
 class MontoEscrito {
+	
 	int texto;
 	int numero;
 
@@ -68,5 +69,12 @@ class MontoEscrito {
 		texto = unidadEnTexto;
 		return unidad;
 	}
-	// return MontoEscrito;
+	
+  public String Concatenado(int numero) {
+	  String valor;
+	  Mil Funciones = new Mil();
+	  valor=Funciones.MilEnTexto(numero/1000);
+	   valor=valor + Funciones.centenaEnTexto((numero%1000)/100);
+	return valor ;
+  }
 }

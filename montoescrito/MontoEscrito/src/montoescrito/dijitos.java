@@ -7,8 +7,11 @@ import org.junit.jupiter.api.Test;
 class dijitos {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testcuatrodijitos() {
+		MontoEscrito cuatrodijitos = new MontoEscrito();
+	    String valoresperado="nueve mil ochocientos";
+	    String valorobtenido= cuatrodijitos.Concatenado(9800);
+	    assertEquals(valoresperado,valorobtenido);
 	}
 
 }
