@@ -4,34 +4,71 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 import java.util.Scanner;
-
+import java.lang.String;
+import montoescrito.Mil;
 
 class MontoEscrito {
-     int texto;
-	 int numero;
-     public int Miles (int Miles){
-    	 int numero;
-    	 
-    	 return Miles;	
+	private static final int Decenas = 0;
+	int texto;
+	int numero;
+	public String Miles(int Miless) {
+		Mil MilesTx = new Mil();
+		String texto = "";
+		if ((Miless / 1000) > 0) {
+			if ((Miless / 1000) == 1)
+				texto = MilesTx.MilEnTexto(Miless);
+		}
+		return texto;
 	}
-     
-     public int centenas (int centenas) {
-    	 
-    	 return 0; 
-     }
-     
-     public int decenas(int decenas) {
-    	 return decenas;
-     }
-     
-     public int unidad(int unidad) {
-    	 int numero=0;
-    	 int unidadEnTexto=0;
-    	 int uniada= numero %10;
-    	 numero = numero/10;
-    	 texto = unidadEnTexto;
-    	 return unidad;
-     }
-}   
 
-	
+	public int centena(int centenass) {
+		centenas CentenaTx = new centena();
+        String texto=""; 
+    	int centenas=numero%10;
+    	if ((centenass!=1) && (centenass!=5) && (centenass!=9) && (centenass!=0)) {
+			texto= CentenaTx.centenaEnTexto(centenass);
+    	}
+    	else
+    	{
+    		if(centenass==1) {
+    			texto= CentenaTx.centenaEnTexto(centenass);
+    		}
+    		if((centenass==5)) {
+    			texto= CentenaTx.centenaEnTexto(centenass);
+    		}
+    		if(centenass==9) {
+    			texto= CentenaTx.centenaEnTexto(centenass);
+    		}
+    	}
+    	     
+    	 return centenas; 
+     }
+
+	public int Decenas(int Decenas) {
+		int decenas1 = numero % 10;
+		int numero = 0;
+		numero = numero / 10;
+		if ((unidad(0) == 0) && (decenas1 > 0)) {
+			texto = Decenas(decenas1);
+		} else {
+			if (Decenas == 1) {
+				texto = Decenas(10 + unidad(0));
+			} else {
+				if (Decenas > 1) {
+					texto = Decenas(Decenas);
+				}
+			}
+		}
+		return Decenas;
+	}
+
+	public int unidad(int unidad) {
+		int numero = 0;
+		char unidadEnTexto = 0;
+		unidad = numero % 10;
+		numero = numero / 10;
+		texto = unidadEnTexto;
+		return unidad;
+	}
+	// return MontoEscrito;
+}
