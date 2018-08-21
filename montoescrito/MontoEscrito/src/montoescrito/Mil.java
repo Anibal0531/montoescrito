@@ -8,21 +8,21 @@ public class Mil {
 
 		switch (Mil) {
 		case 1:
-			return "mil";
+			return "mil ";
 		case 2:
 			return "dos mil ";
 		case 3:
-			return "tres mil";
+			return "tres mil ";
 		case 4:
-			return "cuatro mil";
+			return "cuatro mil ";
 		case 5:
-			return "cinco mil";
+			return "cinco mil ";
 		case 6:
-			return "seis mil";
+			return "seis mil ";
 		case 7:
-			return "siete mil";
+			return "siete mil ";
 		case 8:
-			return "ocho mil";
+			return "ocho mil ";
 		case 9:
 			return "nueve mil ";
 		default:
@@ -34,23 +34,23 @@ public class Mil {
 
 		switch (centena) {
 		case 1:
-			return "ciento";
+			return "ciento ";
 		case 2:
-			return "doscientos";
+			return "doscientos ";
 		case 3:
-			return "trescientos";
+			return "trescientos ";
 		case 4:
-			return "cuatrocientos";
+			return "cuatrocientos ";
 		case 5:
-			return "quinientos";
+			return "quinientos ";
 		case 6:
-			return "seiscientos";
+			return "seiscientos ";
 		case 7:
-			return "sietecientos";
+			return "sietecientos ";
 		case 8:
-			return "ochocientos";
+			return "ochocientos ";
 		case 9:
-			return "novecientos";
+			return "novecientos ";
 		default:
 			return "";
 		}
