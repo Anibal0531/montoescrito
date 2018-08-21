@@ -78,6 +78,7 @@ class MontoEscrito {
 	   valor=valor + Funciones.DecenaEnTexto(((numero%1000)%100)/10);
 	   valor=valor + Funciones.centenaEnTexto(numero/100);
 	   valor=valor + Funciones.decenasEnTexto((numero%100)/100);
+	   valor=valor + Funciones.decenasEnTexto(numero/10);
 	return valor ;
   }
 }

@@ -20,4 +20,11 @@ class dijitos {
 	    assertEquals(valoresperado,valorobtenido);
 	    System.out.println(valorobtenido);
 	}
+	void testdosdijitos() {
+		MontoEscrito dosdijitos = new MontoEscrito();
+	    String valoresperado="once";
+	    String valorobtenido= dosdijitos.Concatenado(11);
+	    assertEquals(valoresperado,valorobtenido);
+	    System.out.println(valorobtenido);
+	}
 }
