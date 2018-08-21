@@ -60,6 +60,23 @@ class MontoEscrito {
 		}
 		return Decenas;
 	}
+	public int decena(int decena) {
+		int decenas1 = numero % 10;
+		int numero = 0;
+		numero = numero / 10;
+		if ((unidad(0) == 0) && (decenas1 > 0)) {
+			texto = Decenas(decenas1);
+		} else {
+			if (decena == 1) {
+				texto = decena(10 + unidad(0));
+			} else {
+				if (decena > 1) {
+					texto = decena(decena);
+				}
+			}
+		}
+		return decena;
+	}
 
 	public int unidad(int unidad) {
 		int numero = 0;
@@ -78,7 +95,10 @@ class MontoEscrito {
 	   valor=valor + Funciones.DecenaEnTexto(((numero%1000)%100)/10);
 	   valor=valor + Funciones.centenaEnTexto(numero/100);
 	   valor=valor + Funciones.decenasEnTexto((numero%100)/100);
-	   valor=valor + Funciones.decenasEnTexto(numero/10);
+	   valor=valor + Funciones.decenasEnTexto((numero%100)/10);
+	  
+	   //valor=valor + Funciones.unidadEnTexto(numero/10);
+	   
 	return valor ;
   }
 }

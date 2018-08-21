@@ -82,6 +82,9 @@ public class Mil {
 	}
 
 	public String decenasEnTexto(int decenas) {
+		if((decenas>10)&&(decenas<16)) {
+			System.out.print(decenas);
+		}
 
 		switch (decenas) {
 		case 11:
